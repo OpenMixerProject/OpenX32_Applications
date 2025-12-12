@@ -1,0 +1,9 @@
+[submodule "libvncserver"]
+	path = libvncserver
+	url = https://github.com/LibVNC/libvncserver.git
+[submodule "framebuffer-vncserver"]
+	path = framebuffer-vncserver
+	url = https://github.com/ponty/framebuffer-vncserver.git
+[submodule "openssh-portable"]
+	path = openssh-portable
+	url = https://github.com/openssh/openssh-portable.git
