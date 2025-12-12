@@ -1,9 +1,19 @@
 [submodule "libvncserver"]
 	path = libvncserver
 	url = https://github.com/LibVNC/libvncserver.git
+	ignore = dirty
 [submodule "framebuffer-vncserver"]
 	path = framebuffer-vncserver
 	url = https://github.com/ponty/framebuffer-vncserver.git
+	ignore = dirty
 [submodule "openssh-portable"]
 	path = openssh-portable
 	url = https://github.com/openssh/openssh-portable.git
+	ignore = dirty
+[submodule "fbDOOM"]
+	path = fbDOOM
+	url = https://github.com/maximevince/fbDOOM.git
+	ignore = dirty
+[submodule "arm-NES-linux"]
+	path = arm-NES-linux
+	url = https://github.com/nejidev/arm-NES-linux

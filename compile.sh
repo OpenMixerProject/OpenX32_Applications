@@ -56,4 +56,22 @@ cd ..
 
 cp framebuffer-vncserver/build/framebuffer-vncserver bin/
 
+
+
+echo "Compiling fbDOOM..."
+cd fbDOOM/fbdoom
+ARCH=arm CROSS_COMPILE=/usr/bin/arm-linux-gnueabi- make
+cd ../..
+cp fbDOOM/fbdoom/fbdoom bin/
+
+
+
+echo "Compiling InfoNes..."
+# applying fix for i.MX25 framebuffer
+cp files/InfoNES_System_Linux.cpp arm-NES-linux/linux/
+cd arm-NES-linux/linux
+make CC=arm-linux-gnueabi-gcc
+cd ../../
+cp arm-NES-linux/linux/InfoNES bin/
+
 echo "Done."
